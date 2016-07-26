@@ -67,9 +67,6 @@ meanAndStdColumns <- grep(".*Mean.*|.*Std.*", names(mergedData),ignore.case = TR
 usedColumns <- c(meanAndStdColumns,562,563)
 extractedData <- mergedData[,usedColumns]
 
-# dim(extractedData)
-## Output: [1] 10299    88
-
 # Name the activities in the extracted data set
 extractedData$Activity <- as.character(extractedData$Activity)
 
